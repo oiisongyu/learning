@@ -9,10 +9,11 @@ public class Singleton {
     static Singleton INSTANCE;
     private Singleton (){};
 
+    static {
+        INSTANCE = new Singleton();
+    }
+
     public static Singleton getINSTANCE (){
-        if (INSTANCE == null){
-            INSTANCE = new Singleton();
-        }
         return INSTANCE;
     }
 

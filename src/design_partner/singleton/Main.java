@@ -10,5 +10,10 @@ public class Main {
         System.out.println(singleton1);
         Singleton singleton2 = Singleton.getINSTANCE();
         System.out.println(singleton2);
+
+        LazySingleton lazySingleton1 = LazySingleton.getInstance();
+        LazySingleton lazySingleton2 = LazySingleton.getInstance();
+        System.out.println(lazySingleton1);
+        System.out.println(lazySingleton2);
     }
 }
