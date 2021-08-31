@@ -19,6 +19,9 @@ public class InnerPay extends AbstractPay {
 
     @Override
     String pay(String payBody) {
+        if (isCheckParam()){
+            beforePay(payBody);
+        }
         return payBody + "inner pay";
     }
 
