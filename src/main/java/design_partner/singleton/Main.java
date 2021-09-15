@@ -15,5 +15,15 @@ public class Main {
         LazySingleton lazySingleton2 = LazySingleton.getInstance();
         System.out.println(lazySingleton1);
         System.out.println(lazySingleton2);
+
+        EnumSingleton.INSTANCE.test();
+        EnumSingleton.INSTANCE.test();
+        EnumSingleton.INSTANCE.test();
+        //1709537756
+        System.out.println(EnumSingleton.INSTANCE);
+        System.out.println(EnumSingleton.INSTANCE);
+        System.out.println(EnumSingleton.INSTANCE);
+        System.out.println(EnumSingleton.INSTANCE.hashCode());
+
     }
 }
